@@ -1,53 +1,162 @@
-<!--Website created by 0xR3TR0. All rights reserved.-->  
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- meta tag's -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="ShowcaseGrid — A lightweight, reusable showcase grid component for displaying projects, articles, and modules."
+        />
+        <title>ShowcaseGrid</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Theme Toggle -->
+        <button
+            class="sg-theme-toggle"
+            id="sg-theme-toggle"
+            aria-label="Toggle theme"
+        >
+            <svg
+                class="icon-sun"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+                class="icon-moon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+        </button>
 
-    <!-- style -->
-    <link rel="stylesheet" href="Directories/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <div class="sg-container">
+            <!-- Header -->
+            <header class="sg-header">
+                <h1 class="sg-header__title"><span>Showcase</span>Grid</h1>
+                <p class="sg-header__subtitle">
+                    A lightweight, reusable grid component for showcasing
+                    projects, articles, modules, and more. Filter, search, sort,
+                    and explore.
+                </p>
+            </header>
 
-    <!-- title -->
-    <title>Portfolio Website</title>
-</head>
-<body>
-    <div class="hero">
-        <nav>
-            <img src="Media & Images/logo.png" alt="logo" class="logo">
+            <!-- Toolbar -->
+            <div class="sg-toolbar">
+                <div class="sg-toolbar__top">
+                    <div class="sg-search">
+                        <svg
+                            class="sg-search__icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                        <input
+                            type="text"
+                            class="sg-search__input"
+                            id="sg-search"
+                            placeholder="Search items..."
+                            autocomplete="off"
+                        />
+                        <button
+                            class="sg-search__clear"
+                            aria-label="Clear search"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="sg-sort">
+                        <select
+                            class="sg-sort__select"
+                            id="sg-sort"
+                            aria-label="Sort items"
+                        >
+                            <option value="newest">Newest first</option>
+                            <option value="oldest">Oldest first</option>
+                            <option value="a-z">A &rarr; Z</option>
+                            <option value="z-a">Z &rarr; A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sg-toolbar__bottom">
+                    <div class="sg-filters" id="sg-category-filters">
+                        <span class="sg-filters__label">Category:</span>
+                        <!-- Buttons generated by script.js -->
+                    </div>
+                </div>
+                <div class="sg-toolbar__bottom">
+                    <div class="sg-filters" id="sg-tag-filters">
+                        <span class="sg-filters__label">Tags:</span>
+                        <!-- Buttons generated by script.js -->
+                    </div>
+                </div>
+            </div>
 
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">PORTFOLIO</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">HIRE ME</a></li>
-            </ul>
+            <!-- Results Info -->
+            <div class="sg-results-info" id="sg-results-info"></div>
 
-            <img src="Media & Images/moon.png" id="icon">
-        </nav>
+            <!-- Grid -->
+            <div class="sg-grid" id="sg-grid">
+                <!-- Cards rendered by script.js -->
+            </div>
 
-        <div class="info">
-            <h1>I'm <span>Kate</span> Amelia</h1>
-            <p>This is my official portfolio website to showcase my all works related to web<br>development and UI desing.</p>
-            <a href="">Download CV</a>
+            <!-- Load More -->
+            <div class="sg-load-more" id="sg-load-more" style="display: none">
+                <button class="sg-load-more__btn">Load more</button>
+            </div>
         </div>
 
-        <div class="img-box">
-            <img src="Media & Images/pattern.png" class="back-img">
-            <img src="Media & Images/girl.png" class="main-img">
+        <!-- Modal -->
+        <div class="sg-modal-overlay" id="sg-modal-overlay">
+            <div class="sg-modal" role="dialog" aria-modal="true"></div>
         </div>
 
-        <div class="social-links">
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href=""><i class="fa-brands fa-behance"></i></a>
-            <a href=""><i class="fa-brands fa-dribbble"></i></a>
-        </div>
-    </div>
+        <!-- Footer -->
+        <footer class="sg-footer">
+            <div class="sg-container">
+                <p>
+                    <strong>ShowcaseGrid</strong> — An open-source, reusable
+                    showcase component. Built with vanilla HTML, CSS &amp;
+                    JavaScript.
+                </p>
+            </div>
+        </footer>
 
-    <!-- script -->
-    <script src="Directories/script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

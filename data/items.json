@@ -1,0 +1,136 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "title": "Weather Dashboard",
+            "subtitle": "Real-time Weather Tracking App",
+            "description": "A comprehensive weather dashboard displaying current conditions, hourly forecasts, and 7-day predictions. Features interactive charts, geolocation support, and a fully responsive interface optimized for desktop and mobile devices.",
+            "tags": ["JavaScript", "API", "Charts", "Responsive"],
+            "category": "Projects",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-01.svg",
+            "date": "2025-12-15"
+        },
+        {
+            "id": 2,
+            "title": "Task Manager API",
+            "subtitle": "RESTful Backend Service",
+            "description": "A scalable REST API for task management with user authentication, role-based access control, and real-time notifications. Includes comprehensive API documentation, rate limiting, and automated testing suite.",
+            "tags": ["Node.js", "REST", "Authentication", "Backend"],
+            "category": "Projects",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-02.svg",
+            "date": "2025-11-20"
+        },
+        {
+            "id": 3,
+            "title": "CSS Grid Layout Guide",
+            "subtitle": "Modern Layout Techniques Explained",
+            "description": "An in-depth exploration of CSS Grid layout techniques, covering implicit and explicit grids, template areas, auto-placement algorithms, and responsive patterns without media queries.",
+            "tags": ["CSS", "Layout", "Tutorial", "Responsive"],
+            "category": "Articles",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-03.svg",
+            "date": "2025-10-05"
+        },
+        {
+            "id": 4,
+            "title": "E-commerce Platform",
+            "subtitle": "Full-stack Online Store",
+            "description": "A complete e-commerce platform featuring product catalog, shopping cart, secure checkout, order tracking, and admin dashboard. Implements payment processing, inventory management, and customer analytics.",
+            "tags": ["Full-stack", "E-commerce", "Database", "Payments"],
+            "category": "Projects",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-04.svg",
+            "date": "2025-09-18"
+        },
+        {
+            "id": 5,
+            "title": "Design System Components",
+            "subtitle": "Reusable UI Building Blocks",
+            "description": "A collection of accessible, themeable UI components following atomic design principles. Includes buttons, forms, cards, navigation, modals, and data display components with full documentation and usage examples.",
+            "tags": ["UI", "Components", "Accessibility", "Design System"],
+            "category": "Modules",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-05.svg",
+            "date": "2025-08-22"
+        },
+        {
+            "id": 6,
+            "title": "Authentication Module",
+            "subtitle": "Secure Identity Management",
+            "description": "A drop-in authentication module supporting email/password, OAuth providers, two-factor authentication, and session management. Features secure token handling, password hashing, and brute-force protection.",
+            "tags": ["Security", "OAuth", "Authentication", "Module"],
+            "category": "Modules",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-06.svg",
+            "date": "2025-07-30"
+        },
+        {
+            "id": 7,
+            "title": "Data Visualization Toolkit",
+            "subtitle": "Interactive Charts and Graphs",
+            "description": "A lightweight toolkit for creating interactive data visualizations using SVG and Canvas. Supports bar charts, line graphs, scatter plots, pie charts, and heatmaps with smooth animations and tooltips.",
+            "tags": ["SVG", "Canvas", "Data", "Visualization"],
+            "category": "Projects",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-01.svg",
+            "date": "2025-06-14"
+        },
+        {
+            "id": 8,
+            "title": "Responsive Navigation",
+            "subtitle": "Adaptive Menu Component",
+            "description": "A flexible navigation component that adapts seamlessly across screen sizes. Features hamburger menu, mega menus, breadcrumbs, and sidebar navigation with keyboard accessibility and smooth transitions.",
+            "tags": ["Navigation", "Responsive", "Accessibility", "CSS"],
+            "category": "Modules",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-02.svg",
+            "date": "2025-05-28"
+        },
+        {
+            "id": 9,
+            "title": "State Management Patterns",
+            "subtitle": "Architectural Best Practices",
+            "description": "A comprehensive guide to state management patterns in frontend applications. Covers pub/sub, flux architecture, reactive stores, and immutable state trees with practical vanilla JavaScript implementations.",
+            "tags": ["Architecture", "State", "Patterns", "JavaScript"],
+            "category": "Articles",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-03.svg",
+            "date": "2025-04-10"
+        },
+        {
+            "id": 10,
+            "title": "Real-time Chat Interface",
+            "subtitle": "WebSocket-powered Messaging",
+            "description": "A real-time chat application with WebSocket communication, message threading, file sharing, typing indicators, and read receipts. Features end-to-end encryption and offline message queuing.",
+            "tags": ["WebSocket", "Real-time", "Chat", "Encryption"],
+            "category": "Projects",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-04.svg",
+            "date": "2025-03-22"
+        },
+        {
+            "id": 11,
+            "title": "Form Validation Library",
+            "subtitle": "Declarative Input Validation",
+            "description": "A zero-dependency form validation library with declarative rules, custom validators, async validation support, and accessible error messaging. Supports complex validation chains and conditional logic.",
+            "tags": ["Forms", "Validation", "Library", "Accessibility"],
+            "category": "Modules",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-05.svg",
+            "date": "2025-02-15"
+        },
+        {
+            "id": 12,
+            "title": "Performance Optimization Guide",
+            "subtitle": "Web Vitals and Loading Strategies",
+            "description": "A practical guide to optimizing web performance covering Core Web Vitals, lazy loading strategies, code splitting, caching policies, image optimization, and rendering performance techniques.",
+            "tags": ["Performance", "Optimization", "Web Vitals", "Tutorial"],
+            "category": "Articles",
+            "link": "#",
+            "thumbnail": "assets/thumbnails/thumb-06.svg",
+            "date": "2025-01-08"
+        }
+    ]
+}
